@@ -1,0 +1,375 @@
+body {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    font-family: "Pretendard";
+    margin: 0 auto;
+}
+
+.wall {
+    width: 100%;
+    height: 311px;
+    flex-shrink: 0;
+    background: #00A863;
+    position: relative; /* 추가 */
+    z-index: 0;
+}
+
+.side {
+    margin-top: 182px;
+    margin-right: 600px;
+    width: 145px;
+    height: 462px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #F6F6F6;
+    position: absolute;   /*이부분 수정하면 따라 내려옴*/
+    cursor: pointer;
+}
+
+.sideline {
+    margin-top: 30px;
+    width: 93px;
+    height: 0px;
+    background: #D9D9D9;
+}
+
+
+.window {
+    min-height: 120vh;
+    padding-bottom: 100px;
+    width: 430px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.backbox{
+    background: #00A863;
+    width: 430px;
+    height: 311px;
+    position: absolute;
+    top: 0; /* 추가 */
+    left: 50%; /* 추가 */
+    transform: translateX(-50%); /* 추가 */
+    z-index: 0; /* 추가 */
+}
+
+.my {
+    position: absolute;
+    top: 31px;
+    left: 46px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+
+.back {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 23px;
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+
+
+/* 기본 세팅 */ 
+
+.t0 {
+    margin-top: 108px;
+    width: 384px;
+    height: 110px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.09);
+    position: absolute;
+}
+
+.profile {
+    margin-top: 13px;
+    margin-left: 23px;
+    width: 83px;
+    height: 83px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #D9D9D9;
+    position: absolute;
+}
+
+.profile-title {
+    color: #00A863;
+    font-family: "Pretendard";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    padding-top: 23px;
+    padding-left: 128px;
+    position: absolute;
+}
+
+.profile-sulmyeong {
+    color: #00A863;
+    font-family: "Pretendard";
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.45px;
+    padding-top: 50px;
+    padding-left: 128px;
+    position: absolute;
+}
+
+
+.tl {
+    margin-top: 246px;
+    width: 384px;
+    height: 478px;
+    flex-shrink: 0;
+    position: absolute;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.09);
+}
+
+.rect {
+    text-align: center;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 19px;
+    margin-left: 335px;
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    background-color: #00A863;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.card-img {
+    margin-top: 0px;
+    margin-left: 151px;
+    width: 82px;
+    height: 130px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #D9D9D9;
+}
+
+.sun {
+    margin-top: 19px;
+    width: 311px;
+    height: 1px;
+    opacity: 0.5;
+    background: #00A863;
+}
+
+p {
+    margin-left: 52px;
+    color: #00A863;
+    font-family: "Pretendard";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.6px;
+}
+
+span {
+    margin-left: 166px;
+    color: #00A863;
+    font-family: "Pretendard";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.38px;
+}
+
+.info {
+    margin-top: 22px;
+    color: #00A863;
+    font-family: "Pretendard";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+}
+
+.card-info {
+    color: #00A863;
+    font-family: "Pretendard";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.btn {
+    margin-left: 54px;
+    margin-top: 20px;
+    background-color: #FFF;
+    width: 276px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #00A863;
+    cursor: pointer;
+}
+
+.warn-box {
+    margin-top: 750px;
+    margin-bottom: 56px;
+    width: 384px;
+    height: 166px;
+    flex-shrink: 0;
+    position: absolute;
+}
+
+.warn {
+    width: 19px;
+    height: 19px;
+    margin-left: 0px;
+    flex-shrink: 0;
+    display: inline-block; /* 인라인 블록 요소로 설정하여 이미지를 같은 줄에 표시 */
+    vertical-align: middle;
+}
+
+.warn-content {
+    color: #D9D9D9;
+    font-family: "Pretendard";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.55px;
+    display: inline-block; /* 인라인 블록 요소로 설정하여 텍스트를 같은 줄에 표시 */
+    vertical-align: middle;
+}
+
+
+.button1 {
+    margin-top: 1000px;
+    margin-bottom: 700px;
+    width: 384px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: solid 0px #00A863;
+    background: #00A863;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+/* test */
+/*
+.test-1 {
+    margin-top: 533px;
+    margin-left: 23px;
+    width: 147px;
+    height: 171px;
+    flex-shrink: 0;
+    fill: #F6F6F6;
+    border: solid 1px #00A863;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    position: absolute;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+#box{
+    margin-top: 315px;
+    margin-left: -400px;
+}
+
+.boxs{
+    width: 384px;
+    height: 170.9px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 0.3px solid #FF2424;
+    margin-top: 20px;
+}
+
+.svgMBox{
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.boxImg{
+    width: 148px;
+    height: 172.5px;
+    margin-left: -150px;
+    border-radius: 40px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    flex-shrink: 0;
+}
+
+.iconBox{
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FF2424;
+    margin-top: -155px;
+    margin-left: 160px;
+}
+
+.iconImg{
+    width: 33px;
+    height: 33px;
+    flex-shrink: 0;
+    margin-top: 13px;
+    margin-left: 11px;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.line2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}*/
